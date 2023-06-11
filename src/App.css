@@ -11,6 +11,8 @@ Dark green: #28b485
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  cursor: default;
 
 }
 .trueBackground{
@@ -42,17 +44,96 @@ object-fit: cover;
 }
 
 .navMenu{
+  display: flex;
+  flex-direction: column;
   padding: 10%;
+  position: relative;
+  
   
 }
+.routeButton{
+  display: inline-block;
+  padding: 1%;
+  
+  font-weight: 300;
+  position: relative;
 
+ 
+}
+
+.routeButton::before{
+  content: "";
+  background-color: #23e9f0;
+  position: absolute;
+  margin-right: 2%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  transform: scaleY(0);
+  transition: transform .2s, width .4s .2s;
+  opacity: .5;
+  border: 2px solid;
+  border-radius: 5px;
+  z-index: -2;
+ 
+  
+  
+
+}
+.routeButton:hover{
+  z-index: 150;
+  color: black;
+}
+
+.routeButton:hover::before{
+  transform: scaleY(1);
+  width: 100%;
+}
+
+.one{
+  animation-name: moveInRight;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+ 
+
+ 
+}
+.two{
+  animation-name: moveInRight;
+  animation-timing-function: ease-in;
+  animation-duration: 2500ms;
+ 
+ 
+}
+.three{
+  animation-name: moveInRight;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+
+  
+ 
+}
+.four{
+  animation-name: moveInRight;
+  animation-timing-function: ease-in;
+  animation-duration: 3500ms;
+
+ 
+ 
+}
+
+.explain{
+  font-size: 40px;
+  font-size: 20px;
+  font-weight: 200;
+}
 
 
 #preloader {
   display: flex;
-  justify-content: center;
-  align-items: center;
- 
+  justify-content: right;
+  align-items: end;
   background-size: 3%;
   width: 100%;
   height: 100vh;
@@ -60,6 +141,8 @@ object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
+  padding-bottom: 10%;
+  padding-right: 5%;
   
 
 }
@@ -80,25 +163,66 @@ object-fit: cover;
   left: 0;
 
 }
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+
+.devBy{
+display: block;
+font-size: 30px;
+animation-name: moveInLeft;
+animation-duration: 2s;
+animation-timing-function: ease-in;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.devByName{
+  font-weight: 400;
+  font-size: 45px;
+  color:#cf853c;
+  display: block;
+  animation-name: moveInRight;
+animation-duration: 2s;
+animation-timing-function: ease-in;
+}
+#footer{
+text-align: center;
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 2.5rem;
+opacity: .6;
+ 
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-75%) ;
+  }
+
+  
+  80%{
+    transform: translateX(2%) ;
+
+  }
+
+  100%{
+    transform: translateX(0) ;
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(75%) ;
+  }
+
+  
+  80%{
+    transform: translateX(-2%) ;
+
+  }
+
+  100%{
+    transform: translateX(0) ;
+    opacity: 1;
+  }
 }

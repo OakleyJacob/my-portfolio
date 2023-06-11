@@ -12,10 +12,12 @@ import DevBy from './components/DevBy';
 import VideoPlayer from './components/VideoPlayer';
 import Skills from './pages/skills';
 import Typewriter from './components/Typewriter';
-
+import Blank from './components/Blank'
 
 function App() {
-    const [compIndex, setComponentIndex] = useState(0)
+    const [compIndex, setComponentIndex] = useState(3)
+    const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
     const navigation = useNavigate()
     let handleChangeComponent = () => {
        let newIndex = compIndex + 1
@@ -24,6 +26,15 @@ function App() {
            }, 500)
 
     }
+    
+  useEffect(() => {
+   
+      setCurrentYear(new Date().getFullYear());
+    }, []); 
+
+
+
+
     useEffect(() => {
         if (compIndex===3) {
             console.log("home");
@@ -44,8 +55,8 @@ function App() {
      
           
             <Routes>
-              
-                 <Route path='/Home' element={<Home />} />   
+                <Route path='/' element={<Blank />} />   
+                <Route path='/Home' element={<Home />} />   
                 <Route path='/skills' element={<Skills />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
@@ -53,7 +64,7 @@ function App() {
             </Routes>
             
        
-        
+        <div id = 'footer'>&copy; Jacob Oakley {currentYear}  </div>
          </div>
 
        </> 

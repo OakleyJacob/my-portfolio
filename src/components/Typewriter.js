@@ -36,7 +36,7 @@ const Typewriter = (props) => {
 
    <div style = {loaded2?myStyle:null} id = "preloader2">
     <Typed strings = {["Press any button to begin."]}
-     typeSpeed={50}
+     typeSpeed={75}
      fadeOut = {true}
      fadeOutClass= 'typed-fade-out'
      fadeOutDelay= {700}

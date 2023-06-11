@@ -1,0 +1,36 @@
+
+@keyframes moveInLeftImport {
+    0%{
+      opacity: 0;
+      transform: translateX(-35%) ;
+    }
+  
+    
+    80%{
+      transform: translateX(2%) ;
+  
+    }
+  
+    100%{
+      transform: translateX(0) ;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveInRightImport {
+    0%{
+      opacity: 0;
+      transform: translateX(35%) ;
+    }
+  
+    
+    80%{
+      transform: translateX(-2%) ;
+  
+    }
+  
+    100%{
+      transform: translateX(0) ;
+      opacity: 1;
+    }
+}

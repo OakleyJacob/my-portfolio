@@ -8,7 +8,7 @@ const DevBy = (props) => {
       setTimeout(() => {
         setLoaded2(true)
         triggerDone()
-      }, 3000)
+      }, 4000)
     }, [])
     const triggerDone = () => {
       console.log(loaded2);
@@ -29,13 +29,8 @@ const DevBy = (props) => {
   return (
 
    <div style = {loaded2?myStyle:null} id = "preloader2">
-    <Typed strings = {["developed_by:'Jacob Oakley';"]}
-     typeSpeed={50}
-     fadeOut = {true}
-     fadeOutClass= 'typed-fade-out'
-     fadeOutDelay= {700}
-     loop = {false}
-    /></div>
+   <h1 ><span className = "devBy">developed_by: </span><span className = "devByName">'Jacob Oakley'<span style = {{color:'#C3C3C3', fontWeight: '100'}}>;</span></span></h1>
+</div>
   )
 }
 

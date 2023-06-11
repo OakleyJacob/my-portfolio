@@ -30,10 +30,10 @@ const Preloader = (props) => {
   return (
     <>
     <div id = "preloader" backgroundcolor= 'transparent' style = {preloaded?myStyle:null}>
-   
-    <ReactLoading  type={"bars"} color={"#34b4eb"} height={'20%'} width={'20%'} />
-   
-    </div> 
+     
+    <ReactLoading  type={"cylon"} color={"#34b4eb"} height={'10%'} width={'15%'} />
+   </div>
+    
     
 
     
