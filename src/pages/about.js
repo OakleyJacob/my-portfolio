@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div>
                         
-             <NavLink to="/" > Home </NavLink>
+             <NavLink to="/home" > Home </NavLink>
             <h1>
                 This is where my developer resume and education history will be.
             </h1>

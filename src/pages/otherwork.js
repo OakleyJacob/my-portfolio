@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Portfolio = () => {
     return (
         <div>
-             <NavLink to="/" > Home </NavLink>
+             <NavLink to="/home" > Home </NavLink>
             <h1>This is where my work will be</h1>
         </div>
     );

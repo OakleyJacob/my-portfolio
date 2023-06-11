@@ -1,12 +1,19 @@
 
 import React from 'react';
-import Navbar from '../components/Navbar';
+import { useNavigate } from "react-router-dom";
  
 const Home = (props) => {
+    const navigate = useNavigate()
+    const goToContact = () => {
+     navigate('/contact')
+    }
     return (
         <div>
             <div className = 'navMenu'>
-            <Navbar />
+            <h2 onClick={() => goToContact()}>New Game</h2>
+            <h2>Load Game</h2>
+            <h2>Options</h2>
+            <h2>Credits</h2>
             </div>
         
         </div>

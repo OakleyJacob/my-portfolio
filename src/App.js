@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
-
+import { useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route }
     from 'react-router-dom';
 import Home from './pages';
@@ -16,7 +16,7 @@ import Typewriter from './components/Typewriter';
 
 function App() {
     const [compIndex, setComponentIndex] = useState(0)
-  
+    const navigation = useNavigate()
     let handleChangeComponent = () => {
        let newIndex = compIndex + 1
         setTimeout(() => {
@@ -24,6 +24,12 @@ function App() {
            }, 500)
 
     }
+    useEffect(() => {
+        if (compIndex===3) {
+            console.log("home");
+            navigation('/Home')
+        }
+      }, [compIndex]);
     const components = [<Preloader done = { handleChangeComponent}/>, <DevBy done = { handleChangeComponent}/>, <Typewriter done = { handleChangeComponent}/>, <VideoPlayer />]
 
     return (
@@ -34,11 +40,11 @@ function App() {
       
     </div>
       
-        <Router>
        
+     
           
             <Routes>
-            <Route path='/' element={components[compIndex]} />   
+              
                  <Route path='/Home' element={<Home />} />   
                 <Route path='/skills' element={<Skills />} />
                 <Route path='/about' element={<About />} />
@@ -46,7 +52,7 @@ function App() {
                 <Route path='/portfolio' element={<Portfolio />} />
             </Routes>
             
-         </Router> 
+       
         
          </div>
 

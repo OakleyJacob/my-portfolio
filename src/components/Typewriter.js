@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
+
 import Typed from 'react-typed'
 
 const Typewriter = (props) => {
     const [loaded2, setLoaded2] = useState(false)
+
     const handleKeyPressDownStream = () => {
         setLoaded2(true)
         
@@ -13,7 +15,8 @@ const Typewriter = (props) => {
       const handleDone = () => {
         setTimeout(() => {
             props.done()
-        }, 2000)
+           
+        }, 1000)
       }
 
       const myStyle = {
