@@ -8,38 +8,38 @@ import About from './pages/about';
 import Portfolio from './pages/otherwork';
 import Contact from './pages/contact';
 import Preloader from './components/Preloader';
-
-import video from "./Assets/AdobeStock_604695407.mov"
+import DevBy from './components/DevBy';
 import VideoPlayer from './components/VideoPlayer';
 import Skills from './pages/skills';
+import Typewriter from './components/Typewriter';
 
 
 function App() {
-    const [loaded, setLoaded] = useState(false)
+    const [compIndex, setComponentIndex] = useState(0)
   
- 
-    const handleKeyPress = () => {
+    let handleChangeComponent = () => {
+       let newIndex = compIndex + 1
         setTimeout(() => {
-            setLoaded(true);
-       
+            setComponentIndex(newIndex);
            }, 500)
 
     }
-
+    const components = [<Preloader done = { handleChangeComponent}/>, <DevBy done = { handleChangeComponent}/>, <Typewriter done = { handleChangeComponent}/>, <VideoPlayer />]
 
     return (
         <>
-      
+        <div className= 'trueBackground'>
         <div className='background'>
-        <VideoPlayer play = {loaded}/>
+        {components[compIndex]}
       
     </div>
       
         <Router>
-            {loaded?null:<Preloader click = {handleKeyPress}/>}
+       
           
             <Routes>
-                 <Route path='/' element={<Home />} />   
+            <Route path='/' element={components[compIndex]} />   
+                 <Route path='/Home' element={<Home />} />   
                 <Route path='/skills' element={<Skills />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
@@ -48,7 +48,7 @@ function App() {
             
          </Router> 
         
-         
+         </div>
 
        </> 
     );

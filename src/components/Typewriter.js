@@ -5,10 +5,16 @@ const Typewriter = (props) => {
     const [loaded2, setLoaded2] = useState(false)
     const handleKeyPressDownStream = () => {
         setLoaded2(true)
-        props.click()
+        
         window.removeEventListener('keydown', handleKeyPressDownStream);
         window.removeEventListener('click', handleKeyPressDownStream);
+        handleDone()
       };
+      const handleDone = () => {
+        setTimeout(() => {
+            props.done()
+        }, 2000)
+      }
 
       const myStyle = {
         opacity: 0,
@@ -26,7 +32,7 @@ const Typewriter = (props) => {
   return (
 
    <div style = {loaded2?myStyle:null} id = "preloader2">
-    <Typed strings = {["developed_by:'Jacob Oakley';", "Press any button to begin."]}
+    <Typed strings = {["Press any button to begin."]}
      typeSpeed={50}
      fadeOut = {true}
      fadeOutClass= 'typed-fade-out'
