@@ -16,13 +16,26 @@ useEffect(() => {
      
       }
 
- 
+      
+        const [isLandscape, setIsLandscape] = useState(window.innerWidth > window.innerHeight);
+      
+        useEffect(() => {
+          const handleResize = () => {
+            setIsLandscape(window.innerWidth > window.innerHeight);
+          };
+      
+          window.addEventListener('resize', handleResize);
+      
+          return () => {
+            window.removeEventListener('resize', handleResize);
+          };
+        }, []);
 
   return (
     <>
 
     <div className='background' style = {myStyle}>
-      <video autoPlay loop muted src={video} >
+      <video height = 'auto' width='100%' style = {{transform: isLandscape ? 'none' : 'rotate(-90deg)',}} autoPlay loop muted src={video} >
       
       </video>
     </div>
