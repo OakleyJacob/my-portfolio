@@ -21,21 +21,16 @@ function App() {
 
     const navigation = useNavigate()
     let handleChangeComponent = () => {
-       let newIndex = compIndex + 1
+        let newIndex = compIndex + 1
         setTimeout(() => {
             setComponentIndex(newIndex);
-           }, 500)
+        }, 500)
 
     }
     
-  useEffect(() => {
-   
+    useEffect(() => {
       setCurrentYear(new Date().getFullYear());
     }, []); 
-
-
-
-
     useEffect(() => {
         if (compIndex===3) {
             console.log("home");
@@ -46,27 +41,20 @@ function App() {
 
     return (
         <>
-        <div className= 'trueBackground'>
-        <div className='background'>
-        {components[compIndex]}
-      
-    </div>
-      
-       
-     
-          
-            <Routes>
-                <Route path='/' element={<Blank />} />   
-                <Route path='/Home' element={<Home />} />   
-                <Route path='/skills' element={<Skills />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/contact' element={<Contact />} />
-                <Route path='/portfolio' element={<Portfolio />} />
-            </Routes>
+            <div className= 'trueBackground'></div>
+                <div className='background'>
+                {components[compIndex]}
             
-       
-        <div id = 'footer'>&copy; Jacob Oakley {currentYear}  </div>
-         </div>
+                    <Routes>
+                        <Route path='/' element={<Blank />} />   
+                        <Route path='/Home' element={<Home />} />   
+                        <Route path='/skills' element={<Skills />} />
+                        <Route path='/about' element={<About />} />
+                        <Route path='/contact' element={<Contact />} />
+                        <Route path='/portfolio' element={<Portfolio />} />
+                    </Routes>
+                    <div id = 'footer'>&copy; Jacob Oakley {currentYear}  </div>
+                </div>
 
        </> 
     );

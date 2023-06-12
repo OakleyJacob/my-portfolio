@@ -7,15 +7,13 @@ const Typewriter = (props) => {
 
     const handleKeyPressDownStream = () => {
         setLoaded2(true)
-        
         window.removeEventListener('keydown', handleKeyPressDownStream);
         window.removeEventListener('click', handleKeyPressDownStream);
         handleDone()
       };
       const handleDone = () => {
         setTimeout(() => {
-            props.done()
-           
+            props.done() 
         }, 1000)
       }
 
@@ -25,7 +23,6 @@ const Typewriter = (props) => {
         display: 'hidden',
         transition: 'opacity 1.5s ease-out' 
      
-        /* Adjust the duration and easing as needed */
       }
     useEffect(() => { 
         window.addEventListener('keydown', handleKeyPressDownStream);

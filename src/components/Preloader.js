@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ReactLoading from 'react-loading'
-import Typewriter from './Typewriter'
+
 
 const Preloader = (props) => {
     const [preloaded, setPreLoaded] = useState(false)

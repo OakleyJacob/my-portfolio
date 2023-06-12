@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { useNavigate } from "react-router-dom";
 import '../Assets/animations.css'
  
-const Home = (props) => {
+const Home = () => {
     const navigate = useNavigate()
     const goToContact = () => {
         navigate('/contact')

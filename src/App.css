@@ -23,7 +23,7 @@ Dark green: #28b485
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -2; /* Place the video behind other elements */
+  z-index: -2; 
   object-fit: cover;
   
   }
@@ -32,14 +32,14 @@ Dark green: #28b485
 
 .background{
 /* background: linear-gradient(to right bottom, #7ed56fd0,#55c57aca, #016846df); */
-position: fixed;
+  position: fixed;
 
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: -1; /* Place the video behind other elements */
-object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  object-fit: cover;
 
 }
 
@@ -53,8 +53,7 @@ object-fit: cover;
 }
 .routeButton{
   display: inline-block;
-  padding: 1%;
-  
+  padding: 1%; 
   font-weight: 300;
   position: relative;
 
@@ -73,7 +72,6 @@ object-fit: cover;
   transform: scaleY(0);
   transition: transform .2s, width .4s cubic-bezier(1,0,0,1) .2s, background-color .2s;
   opacity: 1;
-  
   border-radius: 5px;
   z-index: -2;
  
@@ -122,9 +120,6 @@ object-fit: cover;
   animation-name: moveInRight;
   animation-timing-function: ease-in;
   animation-duration: 3500ms;
-
- 
- 
 }
 
 .explain{
@@ -148,7 +143,6 @@ object-fit: cover;
   padding-bottom: 10%;
   padding-right: 5%;
   
-
 }
 
 #preloader2 {
@@ -169,11 +163,11 @@ object-fit: cover;
 }
 
 .devBy{
-display: block;
-font-size: 30px;
-animation-name: moveInLeft;
-animation-duration: 2s;
-animation-timing-function: ease-in;
+  display: block;
+  font-size: 30px;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
 }
 
 .devByName{
@@ -182,16 +176,16 @@ animation-timing-function: ease-in;
   color:#cf853c;
   display: block;
   animation-name: moveInRight;
-animation-duration: 2s;
-animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
 }
 #footer{
-text-align: center;
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 2.5rem;
-opacity: .6;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  opacity: .6;
  
 }
 
