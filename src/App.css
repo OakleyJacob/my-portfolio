@@ -63,7 +63,7 @@ object-fit: cover;
 
 .routeButton::before{
   content: "";
-  background-color: #23e9f0;
+  background-color: aliceblue;
   position: absolute;
   margin-right: 2%;
   top: 0;
@@ -71,9 +71,9 @@ object-fit: cover;
   height: 100%;
   width: 3px;
   transform: scaleY(0);
-  transition: transform .2s, width .4s .2s;
-  opacity: .5;
-  border: 2px solid;
+  transition: transform .2s, width .4s cubic-bezier(1,0,0,1) .2s, background-color .2s;
+  opacity: 1;
+  
   border-radius: 5px;
   z-index: -2;
  
@@ -84,6 +84,10 @@ object-fit: cover;
 .routeButton:hover{
   z-index: 150;
   color: black;
+}
+
+.routeButton:active::before {
+  background-color: main menu;
 }
 
 .routeButton:hover::before{

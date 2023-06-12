@@ -1,0 +1,67 @@
+.backButton{
+    text-transform: uppercase;
+    background-color: white;
+    color: #333333;
+    font-weight: 400;
+    padding: 10px 35px;
+    position: relative;
+    margin-top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    transition: all .3s;
+    font-size: 20px;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    animation: moveInTop .8s 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+    
+}
+
+.backButton:hover{
+    transform: translateY(-3px) translateX(-50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+}
+.backButton:active{
+    transform: translateY(-2px) translateX(-50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2)
+}
+
+.backButton::after{
+    content: "";
+    display: inline-block;
+    height: 100%; 
+    width: 100%;
+    border-radius: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: aliceblue;
+    transition: all .3s;
+    
+    
+}
+.backButton:hover::after{
+    
+    transform: scaleX(1.4) scaleY(1.8);
+    opacity: 0;
+    
+    
+}
+
+@keyframes moveInTop{
+    0% {
+        opacity: 0;
+        transform: translateY(-100px) translateX(-50%);
+    }
+    85%{
+        opacity: .85;
+        transform: translateY(8px) translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-2px) translateX(-50%);
+    }
+}

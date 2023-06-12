@@ -90,7 +90,7 @@ const Home = (props) => {
                 onClick={() => goToOtherWork()}>Load Game </span>
                 <span className ='explain two'
                 style = {isHovered2 === 'a'? null:isHovered2? myStyle:myOtherStyle}>
-                my past work</span></h2>
+                my past work</span></h2> 
 
             <h2><span className ='routeButton three' 
                 onMouseEnter={handleMouseEnter3}
