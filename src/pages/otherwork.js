@@ -6,8 +6,9 @@ const Portfolio = () => {
         <div>
              <NavLink to="/home" style={{ textDecoration: 'none' }} >
              <span className = 'backButton'>main menu </span> </NavLink>
-            <h1>This is where my work will be</h1>
-        </div>
+             <div className = 'pagesBody'>
+            <h1 >This is where my work will be</h1>
+        </div></div>
     );
 };
  

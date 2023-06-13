@@ -5,7 +5,7 @@
     font-weight: 400;
     padding: 10px 35px;
     position: relative;
-    margin-top: 5%;
+    margin-top: 3%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 100px;
@@ -50,6 +50,103 @@
     
     
 }
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #868686;  
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #5a5a5a;  
+    }
+
+.pagesBody{
+    margin: 3%;
+    padding: 5%;
+    padding-top: 2%;
+    
+    
+    height: 76vh;
+    background-color:rgba(228, 228, 228, 0.829);
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .2);
+   
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 30px;
+
+    animation: growIn .8s .2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+    transition: all 2s;
+}
+
+.contactCards{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-evenly;
+    
+
+}
+.myCard{
+    perspective: 25rem;
+    width: 20%;
+    position: relative;
+    height: 50vh;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .25);
+}
+.myCard__side{
+    height: 50vh;
+    padding: 2%;
+    transition: all .8s ease;
+    background-color: #5a5a5a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    
+}
+.myCard__side--front{
+    background-color: linear-gradient(to right bottom, #ffb900, #ff7730);
+    
+    
+}
+.myCard__side--back{
+
+    background-color: #9c0f0f;
+    transform: rotateY(180deg);
+    
+}
+
+ .myCard:hover .myCard__side--front{
+    transform:rotateY(-180deg)
+    
+}
+.myCard:hover .myCard__side--back{
+    transform:rotateY(0)
+}
+
+.cardOne{
+    background-image: linear-gradient(to right bottom, #ffb900, #e75e14);
+}
+.cardTwo{
+    background-image: linear-gradient(to right bottom, #55c57a, #197556);
+}
+.cardThree{
+    background-image: linear-gradient(to right bottom, #dd1818, #333333);
+}
+
 
 @keyframes moveInTop{
     0% {
@@ -64,4 +161,28 @@
         opacity: 1;
         transform: translateY(-2px) translateX(-50%);
     }
+    
 }
+
+@keyframes growIn{
+    0% {
+        scale: 0;
+        opacity: 25%;
+    }
+    85%{
+        opacity: .85;
+       
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* #ffb900
+#ff7730
+#55c57a
+#28b485
+ #333333
+→ 
+#dd1818  */

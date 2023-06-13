@@ -11,7 +11,7 @@ Dark green: #28b485
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
-  font-weight: 300;
+  
   cursor: default;
 
 }
@@ -25,6 +25,7 @@ Dark green: #28b485
   height: 100%;
   z-index: -2; 
   object-fit: cover;
+  font-weight: 300;
   
   }
   
@@ -33,7 +34,7 @@ Dark green: #28b485
 .background{
 /* background: linear-gradient(to right bottom, #7ed56fd0,#55c57aca, #016846df); */
   position: fixed;
-
+  background-color: rgb(67, 134, 235);
   top: 0;
   left: 0;
   width: 100%;
@@ -168,6 +169,7 @@ Dark green: #28b485
   animation-name: moveInLeft;
   animation-duration: 2s;
   animation-timing-function: ease-in;
+  font-weight: 200;
 }
 
 .devByName{

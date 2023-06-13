@@ -33,4 +33,22 @@
       transform: translateX(0) ;
       opacity: 1;
     }
-}
+
+  }
+
+  @keyframes moveOutLeft {
+    0%{
+      opacity: 1;
+      transform: translateX(0) ;
+    }
+  
+    
+
+  
+    100%{
+      transform: translateX(-150%) ;
+      opacity: 0;
+    }
+
+  }
+

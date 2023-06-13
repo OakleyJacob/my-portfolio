@@ -42,7 +42,7 @@ function App() {
     return (
         <>
             <div className= 'trueBackground'></div>
-                <div className='background'>
+                
                 {components[compIndex]}
             
                     <Routes>
@@ -54,7 +54,7 @@ function App() {
                         <Route path='/portfolio' element={<Portfolio />} />
                     </Routes>
                     <div id = 'footer'>&copy; Jacob Oakley {currentYear}  </div>
-                </div>
+                
 
        </> 
     );

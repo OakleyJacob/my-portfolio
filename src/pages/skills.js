@@ -6,9 +6,10 @@ const Skills = () => {
         <div>
              <NavLink to="/home" style={{ textDecoration: 'none' }} >
              <span className = 'backButton'>main menu</span>  </NavLink>
-            <h1>This will be my skills section
+             <div className = 'pagesBody'>
+             <h1 >This will be my skills section
             </h1>
-        </div>
+        </div></div>
     );
 };
  
