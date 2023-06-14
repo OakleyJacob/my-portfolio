@@ -97,16 +97,34 @@
     
 
 }
+.contactCards p{
+    font-size: 300%;
+    overflow:hidden;
+    padding-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+
+}
+.contactIcon{
+    
+    
+    transform-origin: left top;
+   
+    
+}
 .myCard{
-    perspective: 25rem;
+    perspective: 35rem;
     width: 20%;
     position: relative;
-    height: 50vh;
+    height: 35rem;
+    
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .25);
+
 }
 .myCard__side{
-    height: 50vh;
+    height: 35rem;
     padding: 2%;
     transition: all .8s ease;
     background-color: #5a5a5a;
@@ -114,37 +132,59 @@
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden;
+    backface-visibility: hidden;   
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    
+   
     
 }
 .myCard__side--front{
-    background-color: linear-gradient(to right bottom, #ffb900, #ff7730);
+
+    background-size: cover;
+    background-blend-mode: color-dodge;
     
     
 }
 .myCard__side--back{
 
-    background-color: #9c0f0f;
-    transform: rotateY(180deg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    transform: rotateY(180deg);    
+
     
 }
 
  .myCard:hover .myCard__side--front{
-    transform:rotateY(-180deg)
+    transform:rotateY(-180deg);
     
 }
 .myCard:hover .myCard__side--back{
-    transform:rotateY(0)
+    transform:rotateY(0);
+   
 }
 
 .cardOne{
-    background-image: linear-gradient(to right bottom, #ffb900, #e75e14);
+    filter: brightness(90%);
+    background-image: linear-gradient(to right bottom, #ffb900, #e75e14), url(/src/Assets/card1.jpg);
 }
 .cardTwo{
-    background-image: linear-gradient(to right bottom, #55c57a, #197556);
+    filter: brightness(80%);
+    background-image: linear-gradient(to right bottom, #55c57a, #197556), url(/src/Assets/card2.jpg);
 }
 .cardThree{
-    background-image: linear-gradient(to right bottom, #dd1818, #333333);
+    filter: brightness(85%);
+    background-image: linear-gradient(to right bottom, #dd1818, #333333), url(/src/Assets/card3.jpg);
+}
+.cardOneBack{
+    background-image:linear-gradient(to right bottom, #ffb900, #e75e14), url(/src/Assets/card1.jpg);
+}
+.cardTwoBack{
+    background-image:linear-gradient(to right bottom, #00d848, #00ca54), url(/src/Assets/card2.jpg);
+}
+.cardThreeBack{
+    background-image:linear-gradient(to right bottom, #dd1818, #333333), url(/src/Assets/card3.jpg);
 }
 
 

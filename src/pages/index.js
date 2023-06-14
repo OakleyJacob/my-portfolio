@@ -120,7 +120,7 @@ const Home = () => {
                 <span className ='explain one'
                 style = {isHovered1 === 'a' && !isTraveling? null:isHovered1|| isTraveling?  myStyle:myOtherStyle }
                 >
-                contact me</span></h2>
+                contact info</span></h2>
 
             <h2><span className ='routeButton two' 
             style = {isTraveling?animationStyle2:null}
