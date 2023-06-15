@@ -51,4 +51,29 @@
     }
 
   }
+  
+  @keyframes fadeOut {
+    0%{
+      opacity: 1;
+       ;
+    }
+  
+    100%{
+
+      opacity: 0;
+    }
+
+  }
+  
+  @keyframes moveOutLeft2 {
+    0%{
+      opacity: 1;
+      transform: translateX(0) ;
+    }
+  
+    100%{
+      transform: translateX(-350%) ;
+      opacity: 0;
+    }
+  }
 

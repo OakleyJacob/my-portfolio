@@ -1,6 +1,6 @@
 .backButton{
     text-transform: uppercase;
-    background-color: white;
+    background-color: rgb(253, 253, 253);
     color: #333333;
     font-weight: 400;
     padding: 10px 35px;
@@ -13,9 +13,7 @@
     font-size: 20px;
     display: inline-block;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    animation: moveInTop .8s 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: backwards;
+
     
 }
 
@@ -94,6 +92,7 @@
     display: flex;
     margin-top: 5%;
     justify-content: space-evenly;
+    flex-flow: row wrap;
     
 
 }
@@ -115,12 +114,14 @@
 }
 .myCard{
     perspective: 35rem;
-    width: 20%;
+    width: 380px;
     position: relative;
     height: 35rem;
     
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .25);
+    
+    margin-bottom: 5%;
+    
+    /* box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .25); */
 
 }
 .myCard__side{
@@ -136,6 +137,7 @@
     display: flex;
     justify-content: center;
     padding-top: 15%;
+
     
    
     
@@ -144,6 +146,7 @@
 
     background-size: cover;
     background-blend-mode: color-dodge;
+
     
     
 }
@@ -152,40 +155,166 @@
     background-size: cover;
     background-blend-mode: overlay;
     transform: rotateY(180deg);    
-
-    
+    animation-name: invisible;
+    animation-duration: 2s;
 }
-
+.myCard:hover{
+    animation-name: nothing;
+    animation-duration: .6s;
+}
  .myCard:hover .myCard__side--front{
     transform:rotateY(-180deg);
+
     
 }
 .myCard:hover .myCard__side--back{
     transform:rotateY(0);
+    
    
 }
 
 .cardOne{
     filter: brightness(90%);
     background-image: linear-gradient(to right bottom, #ffb900, #e75e14), url(/src/Assets/card1.jpg);
+    animation-name: moveInLeft1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
 }
 .cardTwo{
     filter: brightness(80%);
     background-image: linear-gradient(to right bottom, #55c57a, #197556), url(/src/Assets/card2.jpg);
+    animation-name: moveInLeft2;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
 }
 .cardThree{
     filter: brightness(85%);
     background-image: linear-gradient(to right bottom, #dd1818, #333333), url(/src/Assets/card3.jpg);
+    animation-name: moveInLeft3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
 }
 .cardOneBack{
     background-image:linear-gradient(to right bottom, #ffb900, #e75e14), url(/src/Assets/card1.jpg);
+
+    color: black;
+    animation-timing-function: ease-in;
+    text-shadow: rgb(214, 129, 0) 1px 1px 5px;
+    -webkit-text-stroke: .4px rgb(255, 180, 19);
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 13%;
+    padding-bottom: 0;
+    line-height: 1.8;
+    animation-name: invisible;
+    animation-duration: 1.51s;
+  
 }
 .cardTwoBack{
     background-image:linear-gradient(to right bottom, #00d848, #00ca54), url(/src/Assets/card2.jpg);
+    color: black;
+    animation-timing-function: ease-in;
+    text-shadow: rgb(39, 167, 0) 1px 1px 5px;
+    -webkit-text-stroke: .4px rgb(1, 105, 7);
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 13%;
+    padding-bottom: 0;
+    line-height: 1.8;
+    animation-name: invisible;
+    animation-duration: 1.51s;
 }
 .cardThreeBack{
     background-image:linear-gradient(to right bottom, #dd1818, #333333), url(/src/Assets/card3.jpg);
+    color: black;
+    animation-timing-function: ease-in;
+    text-shadow: rgb(255, 51, 0) 1px 1px 5px;
+    -webkit-text-stroke: .4px rgb(105, 1, 1);
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 13%;
+    padding-bottom: 0;
+    line-height: 1.8;
+    animation-name: invisible;
+    animation-duration: 1.51s;
 }
+
+.cardBackButton{
+    text-transform: uppercase;
+    background-color: white;
+    color: #333333;
+    font-weight: 400;
+    padding: 10px 35px;
+    margin-bottom: 10%;
+    position: absolute;
+    margin-top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    transition: all .3s;
+    font-size: 20px;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    
+    align-self: flex-end;
+    animation-name: invisible;
+    animation-duration: 2s;
+}
+
+.cardBackButton:hover{
+    transform: translateY(-3px) translateX(-50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+}
+.cardBackButton:active{
+    transform: translateY(-2px) translateX(-50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2)
+}
+
+.cardBackButton::after{
+    content: "";
+    display: inline-block;
+    height: 100%; 
+    width: 100%;
+    border-radius: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: aliceblue;
+    transition: all .3s;
+    
+    
+}
+.cardBackButton:hover::after{
+    
+    transform: scaleX(1.4) scaleY(1.8);
+    opacity: 0;
+    
+    
+}
+.backOne {
+    background-image: linear-gradient(to right bottom, #f77700, #923300);
+
+
+}
+.backOne::after{
+    background-image: linear-gradient(to right bottom, #ffb900, #e75e14);
+}
+.backTwo {
+    background-image: linear-gradient(to right bottom, #014b19, #00ce11);
+
+}
+.backTwo::after{
+    background-image: linear-gradient(to right bottom, #00ff55, #01520e);
+}
+.backThree {
+    background-image: linear-gradient(to right bottom,  #c50909, #440000);
+
+}
+.backThree::after{
+    background-image: linear-gradient(to right bottom, #da1a1a, #5e0101);
+}
+
 
 
 @keyframes moveInTop{
@@ -217,6 +346,90 @@
         opacity: 1;
         scale: 1;
     }
+}
+@keyframes moveInLeft1{
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    85%{
+   
+        transform:translateX(-5%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+@keyframes moveInLeft2{
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+    85%{
+       
+        transform:translateX(-15%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+@keyframes moveInLeft3{
+    0% {
+        opacity: 0;
+        transform: translateX(-400%);
+    }
+    85%{
+       
+        transform:translateX(-35%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes nothing{
+    0% {
+        
+    }
+   
+    100%{
+    }
+    
+}
+@keyframes invisible{
+    0% {
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes moveOutTop{
+    0% {
+        opacity: 1;
+        transform: translateY(-2px) translateX(-50%);
+    }
+    15%{
+        opacity: .85;
+        transform: translateY(8px) translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-2px) translateX(-50%);
+        opacity: 0;
+        transform: translateY(-100px) translateX(-50%);
+    }
+    
 }
 
 /* #ffb900
