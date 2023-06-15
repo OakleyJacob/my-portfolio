@@ -124,6 +124,7 @@ const Contact = () => {
             <div className = "contactCards">
               <div style = {isAnimating1?null:myShadow}> <div className = 'myCard' style = {isTraveling?animationStyle2:null}  onAnimationStart = {() => handleAnimationStart1()}
                  onAnimationEnd = {() => handleAnimationEnd1()} 
+                 onMouseEnter = {() => handleMouseLeave1()}
                   onMouseLeave = {() => handleMouseLeave1()}>
                 <div className = 'myCard__side myCard__side--front cardOne' ><div className = 'contactIcon'><GitHubIcon    viewBox={'0 0 25 25'} 
                         preserveAspectRatio= 'xMidYMid meet'
@@ -137,6 +138,7 @@ const Contact = () => {
                </div> </div> 
                <div style = {isAnimating2?null:myShadow}> <div className = 'myCard' style = {isTraveling?animationStyle3:null}  onAnimationStart = {() => handleAnimationStart2()}
                  onAnimationEnd = {() => handleAnimationEnd2()} 
+                 onMouseEnter = {() => handleMouseLeave2()}
                   onMouseLeave = {() => handleMouseLeave2()}>
                 <div className = 'myCard__side myCard__side--front cardTwo'><div className = 'contactIcon'><LinkedInIcon   viewBox={'0 0 25 25'} 
                         preserveAspectRatio= 'xMidYMid meet'
@@ -149,16 +151,17 @@ const Contact = () => {
                </div>
                <div style = {isAnimating3?null:myShadow}> <div className = 'myCard' style = {isTraveling?animationStyle4:null}  onAnimationStart = {() => handleAnimationStart3()}
                  onAnimationEnd = {() => handleAnimationEnd3()} 
+                 onMouseEnter = {() => handleMouseLeave3()}
                  onMouseLeave = {() => handleMouseLeave3()}>
                 <div className = 'myCard__side myCard__side--front cardThree'><div className = 'contactIcon'><EmailIcon  viewBox={'0 0 25 25'} 
                         preserveAspectRatio= 'xMidYMid meet'
                         style={{
                             width: '100%',
                             height: '200px'
-                        }}/> <p style = {{textAlign:'center'}}>Send me <br></br>  an email.</p></div></div>
+                        }}/> <p style = {{textAlign:'center'}}>Send me<br/>  an email.</p></div></div>
                 
-                <div className = 'myCard__side myCard__side--back cardThreeBack'>Like the website? Send me an email. <br />  <span style = {{display:'contents'}}> <br/></span>Want to collab? Send me an email.<br/>
-                <span style = {{display:'contents'}}> <br/></span>
+                <div className = 'myCard__side myCard__side--back cardThreeBack'>Like the website? Send me an email. <br />  Want to collab? Send me an email.<br/>
+               Have a question? Send me an email. <br />
               
                 Just wanna chat? Send me an email. <span className = 'cardBackButton backThree'> Start it</span></div></div>
                </div></div>

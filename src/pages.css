@@ -292,6 +292,9 @@
     
     
 }
+.cardThreeBack p {
+    display: inline-block;
+}
 .backOne {
     background-image: linear-gradient(to right bottom, #f77700, #923300);
 
@@ -431,6 +434,10 @@
     }
     
 }
+br2 {
+    margin:2.5em 0;/* FF for instance */
+    line-height:5em;/* chrome for instance */
+  }
 
 /* #ffb900
 #ff7730
