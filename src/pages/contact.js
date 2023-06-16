@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react';
-import { NavLink } from 'react-router-dom';
+
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -61,6 +61,7 @@ const Contact = () => {
             case 3:
                 setIsAnimating3(false);
                 break;
+            default:
 
           }
           }, 600)
@@ -147,7 +148,7 @@ const Contact = () => {
                             height: '200px'
                         }}/> <p style = {{textAlign:'center'}}>Connect on <br/> LinkedIn.</p></div></div>
                 
-                <div className = 'myCard__side myCard__side--back cardTwoBack'>I'm always open to new connections.<br /> If you want to see my random musings about web development, please feel free to add me! <span className = 'cardBackButton backTwo'> Connect</span> </div></div>
+                <div className = 'myCard__side myCard__side--back cardTwoBack'>I'm always open to new connections.<br /> If you want to see my random musings about web development, or share your own, please feel free to add me! <span className = 'cardBackButton backTwo'> Connect</span> </div></div>
                </div>
                <div style = {isAnimating3?null:myShadow}> <div className = 'myCard' style = {isTraveling?animationStyle4:null}  onAnimationStart = {() => handleAnimationStart3()}
                  onAnimationEnd = {() => handleAnimationEnd3()} 

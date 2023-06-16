@@ -318,7 +318,36 @@
     background-image: linear-gradient(to right bottom, #da1a1a, #5e0101);
 }
 
+.project{
+    padding:3rem 0 3rem;
+    width: 75%;
+    height: 17rem;
+    margin: 0 auto;
+    margin-top: 5%;
+   
+    background-color: rgba(114, 114, 114, 0.712) ;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.529);
+    border-radius: 3px;
+    transform: skewX(-15deg);
+    animation-name: moveInBottom;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+.projectFigure{
+    float: left;
+    height: 10rem;
+    width: 10rem;
+    background-color: #00ce11;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin-right: 3%;
+    margin-left: 5%;
+    transform: skewX(15deg);
 
+}
+.projectText{  transform: skewX(15deg);}
 
 @keyframes moveInTop{
     0% {
@@ -434,6 +463,43 @@
     }
     
 }
+
+
+@keyframes moveInBottom{
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+    85%{
+        opacity: .85;
+        transform: translateY(8px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+        transform: skewX(-15deg);
+    }
+    
+}
+@keyframes moveOutBottom{
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+        transform: skewX(-15deg);
+    }
+    15%{
+        opacity: .85;
+        transform: translateY(8px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(250px);
+       
+    }
+    
+}
+
+
 br2 {
     margin:2.5em 0;/* FF for instance */
     line-height:5em;/* chrome for instance */

@@ -16,7 +16,7 @@ import Blank from './components/Blank'
 import './pages.css'
 
 function App() {
-    const [compIndex, setComponentIndex] = useState(0)
+    const [compIndex, setComponentIndex] = useState(3)
     const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
     const navigation = useNavigate()
@@ -29,11 +29,11 @@ function App() {
     }
     
     useEffect(() => {
-      setCurrentYear(new Date().getFullYear());
+        setCurrentYear(new Date().getFullYear());
     }, []); 
     useEffect(() => {
         if (compIndex===3) {
-            console.log("home");
+           
             navigation('/Home')
         }
       }, [compIndex]);
