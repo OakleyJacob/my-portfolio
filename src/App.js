@@ -16,7 +16,7 @@ import Blank from './components/Blank'
 import './pages.css'
 
 function App() {
-    const [compIndex, setComponentIndex] = useState(3)
+    const [compIndex, setComponentIndex] = useState(0)
     const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
     const navigation = useNavigate()

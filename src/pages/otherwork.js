@@ -7,7 +7,7 @@ const Portfolio = () => {
     const [isTraveling, setIsTraveling] = useState(false)
     const animationStyleBackButton1 = {
         animationName : 'moveOutTop',
-        animationDuration : '1s',
+        animationDuration : '2s',
     
         transition: 'opacity .5s ease-out', 
       }
