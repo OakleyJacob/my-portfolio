@@ -14,6 +14,7 @@ import Skills from './pages/skills';
 import Typewriter from './components/Typewriter';
 import Blank from './components/Blank'
 import './pages.css'
+import './icons.css'
 
 function App() {
     const [compIndex, setComponentIndex] = useState(3)

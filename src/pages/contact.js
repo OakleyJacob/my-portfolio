@@ -123,11 +123,11 @@ const Contact = () => {
                   
                 }> main menu</span> 
             <div className = "contactCards">
-              <div style = {isAnimating1?null:myShadow}> <div className = 'myCard' style = {isTraveling?animationStyle2:null}  onAnimationStart = {() => handleAnimationStart1()}
+              <div  style = {isAnimating1?null:myShadow}  > <div className = 'myCard' style = {isTraveling?animationStyle2:{padding: '10%'}}  onAnimationStart = {() => handleAnimationStart1()}
                  onAnimationEnd = {() => handleAnimationEnd1()} 
                  onMouseEnter = {() => handleMouseLeave1()}
                   onMouseLeave = {() => handleMouseLeave1()}>
-                <div className = 'myCard__side myCard__side--front cardOne' ><div className = 'contactIcon'><GitHubIcon    viewBox={'0 0 25 25'} 
+                <div className = 'myCard__side myCard__side--front cardOne' style = {{filter: 'brightness(200%)'}}><div className = 'contactIcon'><GitHubIcon    viewBox={'0 0 25 25'} 
                         preserveAspectRatio= 'xMidYMid meet'
                         style={{
                             width: '100%',
@@ -141,7 +141,7 @@ const Contact = () => {
                  onAnimationEnd = {() => handleAnimationEnd2()} 
                  onMouseEnter = {() => handleMouseLeave2()}
                   onMouseLeave = {() => handleMouseLeave2()}>
-                <div className = 'myCard__side myCard__side--front cardTwo'><div className = 'contactIcon'><LinkedInIcon   viewBox={'0 0 25 25'} 
+                <div className = 'myCard__side myCard__side--front cardTwo' style = {{filter: 'brightness(200%)'}}><div className = 'contactIcon'><LinkedInIcon   viewBox={'0 0 25 25'} 
                         preserveAspectRatio= 'xMidYMid meet'
                         style={{
                             width: '100%',
@@ -154,7 +154,7 @@ const Contact = () => {
                  onAnimationEnd = {() => handleAnimationEnd3()} 
                  onMouseEnter = {() => handleMouseLeave3()}
                  onMouseLeave = {() => handleMouseLeave3()}>
-                <div className = 'myCard__side myCard__side--front cardThree'><div className = 'contactIcon'><EmailIcon  viewBox={'0 0 25 25'} 
+                <div className = 'myCard__side myCard__side--front cardThree' style = {{filter: 'brightness(200%)'}}><div className = 'contactIcon'><EmailIcon  viewBox={'0 0 25 25'} 
                         preserveAspectRatio= 'xMidYMid meet'
                         style={{
                             width: '100%',

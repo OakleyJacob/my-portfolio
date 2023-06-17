@@ -1,0 +1,55 @@
+.docuIcon{
+   width: 200px;
+   height: fit-content;
+   padding: 2% 5% 0% 5%;
+   animation-name: growIn;
+   animation-duration: 2s;
+}
+.iconsBody{
+    display: flex;
+    justify-content: space-evenly;
+}
+.front-End{
+ text-align: center;
+}
+.front-End h2{
+   margin: 10%;
+   }
+
+.back-End{
+    text-align: center;
+    box-sizing: border-box;
+   
+}
+.back-End h2{
+    
+    margin: 10%;
+    }
+
+.react{
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    width: 250px;
+    padding-top: 0;
+}
+@keyframes growIn{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(100%);
+    }
+
+}
+@keyframes spin{
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+
+}
