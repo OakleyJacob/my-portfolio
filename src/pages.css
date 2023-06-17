@@ -113,11 +113,13 @@
     
 }
 .myCard{
+    padding-bottom: 5%;
     perspective: 35rem;
     width: 380px;
     position: relative;
     height: 35rem;
-    
+    border-radius: 15px;
+    /* overflow: hidden; */
     
     margin-bottom: 5%;
     
@@ -143,17 +145,18 @@
     
 }
 .myCard__side--front{
-
+    background-blend-mode: overlay;
     background-size: cover;
-    background-blend-mode: color-dodge;
+
 
     
     
 }
 .myCard__side--back{
+    background-blend-mode: color-dodge;
 
     background-size: cover;
-    background-blend-mode: overlay;
+
     transform: rotateY(180deg);    
     animation-name: invisible;
     animation-duration: 2s;
@@ -174,25 +177,35 @@
 }
 
 .cardOne{
-    filter: brightness(90%);
+    filter: brightness(200%);
     background-image: linear-gradient(to right bottom, #ffb900, #e75e14), url(/src/Assets/card1.jpg);
     animation-name: moveInLeft1;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
+    color: black;
+    text-shadow: rgb(214, 129, 0) 1px 1px 5px;
+    -webkit-text-stroke: .4px rgb(200, 142, 19);
 }
 .cardTwo{
-    filter: brightness(80%);
+    filter: brightness(200%);
     background-image: linear-gradient(to right bottom, #55c57a, #197556), url(/src/Assets/card2.jpg);
     animation-name: moveInLeft2;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
+    color: black;
+    text-shadow: rgb(39, 167, 0) 1px 1px 5px;
+    -webkit-text-stroke: .4px rgb(1, 105, 7);
 }
 .cardThree{
-    filter: brightness(85%);
+    filter: brightness(200%);
     background-image: linear-gradient(to right bottom, #dd1818, #333333), url(/src/Assets/card3.jpg);
     animation-name: moveInLeft3;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
+    color: black;
+    
+    text-shadow: rgb(255, 51, 0) 1px 1px 5px;
+    -webkit-text-stroke: .4px rgb(105, 1, 1);
 }
 .cardOneBack{
     background-image:linear-gradient(to right bottom, #ffb900, #e75e14), url(/src/Assets/card1.jpg);
