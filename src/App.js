@@ -17,7 +17,7 @@ import './pages.css'
 import './icons.css'
 
 function App() {
-    const [compIndex, setComponentIndex] = useState(3)
+    const [compIndex, setComponentIndex] = useState(0)
     const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
     const navigation = useNavigate()
@@ -34,7 +34,7 @@ function App() {
     }, []); 
     useEffect(() => {
         if (compIndex===3) {
-           
+            
             navigation('/Home')
         }
       }, [compIndex]);

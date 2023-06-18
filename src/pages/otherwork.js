@@ -30,7 +30,7 @@ const Portfolio = () => {
                   setTimeout(() => {
                   goToHome()
                   setIsTraveling(false)
-                 }, 1500)}
+                 }, 1400)}
                   
                 }> main menu</span> 
              <div className = 'row'> <Project travel = {isTraveling}/><Project travel = {isTraveling}/><Project travel = {isTraveling}/>

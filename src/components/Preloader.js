@@ -9,7 +9,7 @@ const Preloader = (props) => {
           setPreLoaded(true);
         
           
-         }, 1500)
+         }, 2000)
         }, []);
         useEffect(() => {
          

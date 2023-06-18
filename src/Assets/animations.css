@@ -51,6 +51,21 @@
     }
 
   }
+  @keyframes moveOutRight2 {
+    0%{
+      opacity: 1;
+      transform: translateX(0) ;
+    }
+  
+    
+
+  
+    100%{
+      transform: translateX(+350%) ;
+      opacity: 0;
+    }
+
+  }
   
   @keyframes fadeOut {
     0%{
@@ -76,4 +91,30 @@
       opacity: 0;
     }
   }
+  @keyframes moveOutRight {
+    0%{
+      opacity: 1;
+      transform: translateX(0) ;
+    }
+  
+    
 
+  
+    100%{
+      transform: translateX(+150%) ;
+      opacity: 0;
+    }
+
+  }
+
+  @keyframes shrink {
+    0%{
+      opacity: 1;
+      transform: scale(100%)
+    }
+    100%{
+      opacity:0;
+      transform: scale(0%)
+    }
+  }
+  

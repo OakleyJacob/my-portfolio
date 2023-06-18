@@ -1,13 +1,47 @@
 
-import React from "react";
-import { NavLink } from 'react-router-dom';
+import React, {useState} from "react";
+import { useNavigate } from 'react-router-dom';
 const About = () => {
+    const [isTraveling, setIsTraveling] = useState(false)
+    const animationStyleBackButton1 = {
+        animationName : 'moveOutTop',
+        animationDuration : '2s',
+    
+        transition: 'opacity .5s ease-out', 
+      }
+    const animationStyleBackButton2 = {
+        animation: 'moveInTop .8s 1s',
+        animationTimingFunction: 'ease-in',
+        animationFillMode: 'backwards'
+      }
+      const animationStyleShrink= {
+        animationName : 'shrink',
+        animationDuration : '2s',
+        overflow: 'auto',
+        transition: 'opacity .5s ease-out'
+      }
+
+      const navigate = useNavigate()
+      const goToHome = () => {
+        setTimeout(() => {
+            navigate('/home')
+            setIsTraveling(false)
+        }, 2000)}
     return (
         <div>
                         
-            <NavLink to="/home" style={{ textDecoration: 'none' }} >
-            <span className = 'backButton'>main menu</span>  </NavLink>
-            <div className = 'pagesBody' style= {{overflow: 'auto'}}>
+               
+                        <span className = 'backButton'  
+            style = {isTraveling?animationStyleBackButton1:animationStyleBackButton2}
+             onClick={() => {
+                  setIsTraveling(true)
+                  
+                  goToHome()
+                
+               }
+                  
+                }> main menu</span> 
+            <div className = 'pagesBody' style= {!isTraveling?{overflow: 'auto'}:animationStyleShrink}>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu justo ac lacus egestas auctor. Nam luctus tempor massa, eu pretium elit suscipit et. Fusce quam odio, gravida ornare velit ac, tempor dignissim augue.
             </p><br></br>
