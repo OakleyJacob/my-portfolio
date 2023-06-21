@@ -367,8 +367,12 @@
     margin-left: 5%;
     transform: skewX(15deg);
 
+
 }
 .projectText{  transform: skewX(15deg);}
+.projectPic{
+    width: 100%;
+}
 
 @keyframes moveInTop{
     0% {

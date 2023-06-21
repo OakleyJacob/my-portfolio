@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {useNavigate } from 'react-router-dom';
 import Project from '../components/Project'
 import '../Assets/animations.css'
+import myWork from '../Assets/mywork';
 const Portfolio = () => {
     const [isTraveling, setIsTraveling] = useState(false)
     const animationStyleBackButton1 = {
@@ -33,7 +34,12 @@ const Portfolio = () => {
                  }, 1400)}
                   
                 }> main menu</span> 
-             <div className = 'row'> <Project travel = {isTraveling}/><Project travel = {isTraveling}/><Project travel = {isTraveling}/>
+             <div className = 'row'>
+             
+                {myWork.map((value, index) => {
+                return <Project travel = {isTraveling} name = {value.name} description = {value.description} skills = {value.skills} pic = {value.pic} key = {index} link = {value.link}/>
+                })} 
+
        
         </div></div>
     );

@@ -135,7 +135,7 @@ const Contact = () => {
                         }}/> <p style = {{textAlign:'center'}}>Check out<br></br> my GitHub.</p></div></div>
                 
                 <div className = 'myCard__side myCard__side--back cardOneBack' >My github houses all my projects<br/> some front-end,<br/> some back-end, <br/>some full-stack, <br/>all educational.<br/>
-               Feel free to clone anything you want!  <span className = 'cardBackButton backOne'> Show me</span> </div>
+               Feel free to clone anything you want!  <span className = 'cardBackButton backOne' > <a href="https://github.com/OakleyJacob" target="_blank"  style={{textDecoration:'none', color: '#333333'}}>  Show me</a></span> </div>
                </div> </div> 
                <div style = {isAnimating2?null:myShadow}> <div className = 'myCard' style = {isTraveling?animationStyle3:null}  onAnimationStart = {() => handleAnimationStart2()}
                  onAnimationEnd = {() => handleAnimationEnd2()} 
@@ -148,7 +148,8 @@ const Contact = () => {
                             height: '200px'
                         }}/> <p style = {{textAlign:'center'}}>Connect on <br/> LinkedIn.</p></div></div>
                 
-                <div className = 'myCard__side myCard__side--back cardTwoBack'>I'm always open to new connections.<br /> If you want to see my random musings about web development, or share your own, please feel free to add me! <span className = 'cardBackButton backTwo'> Connect</span> </div></div>
+                <div className = 'myCard__side myCard__side--back cardTwoBack'>I'm always open to new connections.<br /> If you want to see my random musings about web development, or share your own, please feel free to add me!
+                 <span className = 'cardBackButton backTwo'><a href="https://www.linkedin.com/in/jacob-oakley/" target="_blank"  style={{textDecoration:'none', color: '#333333'}}> Connect</a></span> </div></div>
                </div>
                <div style = {isAnimating3?null:myShadow}> <div className = 'myCard' style = {isTraveling?animationStyle4:null}  onAnimationStart = {() => handleAnimationStart3()}
                  onAnimationEnd = {() => handleAnimationEnd3()} 
@@ -164,7 +165,7 @@ const Contact = () => {
                 <div className = 'myCard__side myCard__side--back cardThreeBack'>Like the website? Send me an email. <br />  Want to collab? Send me an email.<br/>
                Have a question? Send me an email. <br />
               
-                Just wanna chat? Send me an email. <span className = 'cardBackButton backThree'> Start it</span></div></div>
+                Just wanna chat? Send me an email. <span className = 'cardBackButton backThree'><a href="mailto:jboyoakley@gmail.com" target="_blank"  style={{textDecoration:'none', color: '#333333'}}> Start it </a></span></div></div>
                </div></div>
         </div>
     );
