@@ -23,13 +23,16 @@ const Project= (props) => {
         <div className = 'projectText'>
         <h3>{props.name}</h3>
         <p>{props.description}</p> 
-        <a href = {props.link}  target="_blank" ><h5 > Lorem Link</h5></a>
-        <ul style = {{listStyle : 'none'}}>
-          {props.skills.map((value, index) => {
-            return <li key={index}>{value}</li>
-          }) }
-
-        </ul>
+        <a href = {props.link}  target="_blank" ><h5 > Check the app out!</h5></a>
+        
+        <div>  {props.skills.map((value, index) => {
+          if (index === props.skills.length-1) {
+            return <span>{value}</span>
+          } else{
+            return <span>{value + ", "}</span>
+        }})}
+          </div>
+        
         </div>
         </div>
         </>

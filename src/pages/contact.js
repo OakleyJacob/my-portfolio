@@ -123,10 +123,12 @@ const Contact = () => {
                   
                 }> main menu</span> 
             <div className = "contactCards">
-              <div  style = {isAnimating1?null:myShadow}  > <div className = 'myCard' style = {isTraveling?animationStyle2:{padding: '10%'}}  onAnimationStart = {() => handleAnimationStart1()}
+              <div  style = {isAnimating1?null:myShadow}  > <div className = 'myCard' 
+                 style = {isTraveling?animationStyle2:{padding: '10%'}}  
+                 onAnimationStart = {() => handleAnimationStart1()}
                  onAnimationEnd = {() => handleAnimationEnd1()} 
                  onMouseEnter = {() => handleMouseLeave1()}
-                  onMouseLeave = {() => handleMouseLeave1()}>
+                 onMouseLeave = {() => handleMouseLeave1()}>
                 <div className = 'myCard__side myCard__side--front cardOne' style = {{filter: 'brightness(200%)'}}><div className = 'contactIcon'><GitHubIcon    viewBox={'0 0 25 25'} 
                         preserveAspectRatio= 'xMidYMid meet'
                         style={{
@@ -137,7 +139,9 @@ const Contact = () => {
                 <div className = 'myCard__side myCard__side--back cardOneBack' >My github houses all my projects<br/> some front-end,<br/> some back-end, <br/>some full-stack, <br/>all educational.<br/>
                Feel free to clone anything you want!  <span className = 'cardBackButton backOne' > <a href="https://github.com/OakleyJacob" target="_blank"  style={{textDecoration:'none', color: '#333333'}}>  Show me</a></span> </div>
                </div> </div> 
-               <div style = {isAnimating2?null:myShadow}> <div className = 'myCard' style = {isTraveling?animationStyle3:null}  onAnimationStart = {() => handleAnimationStart2()}
+               <div style = {isAnimating2?null:myShadow}> <div className = 'myCard' 
+               style = {isTraveling?animationStyle3:null}  
+               onAnimationStart = {() => handleAnimationStart2()}
                  onAnimationEnd = {() => handleAnimationEnd2()} 
                  onMouseEnter = {() => handleMouseLeave2()}
                   onMouseLeave = {() => handleMouseLeave2()}>
