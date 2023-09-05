@@ -171,7 +171,7 @@ const Home = () => {
                 <span className ='explain four' 
                 style = {isHovered4 === 'a'&& !isTraveling? null:isHovered4|| isTraveling? myStyle:myOtherStyle}
                 >
-                my education</span></h2>
+                about me</span></h2>
             </div>
         
         </div>
