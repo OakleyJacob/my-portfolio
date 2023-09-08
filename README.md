@@ -47,8 +47,7 @@ To run this portfolio locally on your machine, follow these steps:
    
 Navigate to the project directory:
 
-bash
-Copy code
+
 cd video-game-portfolio
 Install the necessary dependencies:
 
