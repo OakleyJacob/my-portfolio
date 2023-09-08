@@ -49,6 +49,7 @@ Navigate to the project directory:
 
 
 cd video-game-portfolio
+
 Install the necessary dependencies:
 
 yarn or
@@ -58,12 +59,13 @@ Start the development server:
 
 yarn or 
 npm start
+
 Now, you can access the portfolio in your web browser at http://localhost:3000.
 
-Usage
+## Usage
 Feel free to explore the portfolio and check out my projects. You can click on each project to view more details, screenshots, and, if applicable, live demos.
 
-Contributing
+## Contributing
 If you'd like to contribute to this portfolio or have suggestions for improvements, please feel free to create an issue or submit a pull request. I'm open to collaboration and appreciate any feedback
 
 
