@@ -1,75 +1,71 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Jacob's Personal Portfolio
 
-## Available Scripts
+Welcome to my Video Game-themed Portfolio built with React.js! This portfolio showcases my passion for programming and my skills as a web developer. Here, you'll find a collection of my projects, along with information about me and my development journey and contact info.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Projects](#projects)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
 
 
+## Introduction
+
+As a dedicated gamer and a React.js enthusiast, I decided to combine my two passions to create this video game-themed portfolio. This project not only serves as a showcase of my web development skills but also reflects my love for video games.
+
+In this portfolio, you will find a selection of my gaming-related projects, including interactive game websites, game reviews, and more. I've also included a brief introduction to myself and my journey as a developer.
+
+## Technologies Used
+
+- **React.js**: The core framework used to build this portfolio.
+- **JavaScript**: For scripting and interactivity.
+- **HTML & CSS**: For structuring and styling the content.
+- **Rspec**: For testing.
+
+## Projects
+
+Here are some of the featured projects in this portfolio:
+
+1. Tic-Tac-Toe: A simple tic-tac-toe game allowing the user to play with difficulty levels and select their own icon.
+
+2. Keep Wagging: A full stack application built with react and rails with full CRUD functionality.
+
+3. Ticket Reimbursement System: The backend of a Ticketing application that allows users to apply, log in, and submit tickets for approval. It was built using Java and postgreSQL.
+
+
+## Getting Started
+
+To run this portfolio locally on your machine, follow these steps:
+
+1. Clone this repository to your local machine:
+
+   git clone (https://github.com/OakleyJacob/my-portfolio.git)
+   
+Navigate to the project directory:
+
+bash
+Copy code
+cd video-game-portfolio
+Install the necessary dependencies:
+
+yarn or
+npm install
+
+Start the development server:
+
+yarn or 
+npm start
+Now, you can access the portfolio in your web browser at http://localhost:3000.
+
+Usage
+Feel free to explore the portfolio and check out my projects. You can click on each project to view more details, screenshots, and, if applicable, live demos.
+
+Contributing
+If you'd like to contribute to this portfolio or have suggestions for improvements, please feel free to create an issue or submit a pull request. I'm open to collaboration and appreciate any feedback
 
 
 
